@@ -13,7 +13,7 @@ Este repositorio contiene el código para un sistema automatizado de clasificaci
 
 ### Carpeta `prueba1.26` (Código para Arduino)
 - **`prueba1.26.ino`**: Código principal para Arduino que gestiona los servos, sensor de peso y comunicaciones con el servidor.
-- **`arduino_secrets.h`**: Archivo de configuración con credenciales o ajustes sensibles para la conexión WiFi y otros parámetros. **No compartir públicamente**.
+- **`arduino_secrets.h`**: Archivo de configuración con credenciales o ajustes sensibles para la conexión WiFi y otros parámetros.
 
 ## Requisitos
 
