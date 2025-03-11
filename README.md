@@ -15,6 +15,31 @@ Este repositorio contiene el código para un sistema automatizado de clasificaci
 - **`prueba1.26.ino`**: Código principal para Arduino que gestiona los servos, sensor de peso y comunicaciones con el servidor.
 - **`arduino_secrets.h`**: Archivo de configuración con credenciales o ajustes sensibles para la conexión WiFi y otros parámetros.
 
+## 🛠️ Descripción del Código Arduino
+
+### 🔹 `prueba1.26.ino`
+Este código es la primera versión funcional del clasificador de huevos. Se encarga de:
+
+1. **Leer el peso del huevo** usando el módulo **HX711**.
+2. **Clasificar el huevo** en una de las siguientes categorías según su peso:
+   - **Menos de 10g** → Huevos pequeños.
+   - **10g a 20g** → Huevos medianos.
+   - **20g a 30g** → Huevos grandes.
+   - **Más de 30g** → Huevos jumbo.
+3. **Mover los servomotores** para redirigir el huevo a la categoría correspondiente.
+5. **Versión con Servidor Local**: Crea una interfaz web accesible en la red local
+
+---
+
+### 🔹 `prueba1.35.ino`
+Esta versión mejora el código anterior con:
+- **Pantalla OLED** para mostrar el peso y la categoría del huevo en tiempo real.
+- **Mejor manejo de servomotores**, reduciendo el tiempo de espera y optimizando la clasificación.
+- **WiFi optimizado** con la librería `WiFiS3` para mejorar la estabilidad de conexión.
+- **Lógica de clasificación más eficiente**, haciendo que el sistema sea más rápido y preciso.
+- **Versión con Servidor Remoto**: Envía datos a un servidor externo.
+
+
 ## Requisitos
 
 ### Para el código de Arduino:
